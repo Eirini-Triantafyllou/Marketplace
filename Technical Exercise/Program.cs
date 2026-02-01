@@ -1,4 +1,7 @@
 
+using Technical_Exercise.Services;
+using Technical_Exercise.Services.Interfaces;
+
 namespace Technical_Exercise
 {
     public class Program
@@ -8,6 +11,8 @@ namespace Technical_Exercise
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddScoped<IProviderScoringService, ProviderScoringService>();
+            builder.Services.AddScoped<IMatchingService, MatchingService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

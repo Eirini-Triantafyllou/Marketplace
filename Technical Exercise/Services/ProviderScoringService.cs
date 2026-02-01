@@ -1,8 +1,9 @@
 ﻿using Technical_Exercise.Models;
+using Technical_Exercise.Services.Interfaces;
 
 namespace Technical_Exercise.Services
 {
-    public class ProviderScoringService
+    public class ProviderScoringService : IProviderScoringService
     {
 
         private readonly ILogger<ProviderScoringService> logger;
