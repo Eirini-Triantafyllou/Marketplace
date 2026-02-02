@@ -11,7 +11,8 @@ namespace Technical_Exercise.Services
         {
             this.logger = logger;
         }
-        public decimal CalculateProviderScore(Provider provider, List<Certification> certifications)
+
+        public virtual decimal CalculateProviderScore(Provider provider, List<Certification> certifications)
         {
 
             if (provider == null)
