@@ -13,7 +13,7 @@ namespace Technical_Exercise.Models
         [Required]
         [Range(0, 5, ErrorMessage = "Assessment Score must be between 0 and 5")]
         public decimal AssessmentScore { get; set; }
-        public DateTime LastActivityDate { get; set; }
+        public DateTime? LastActivityDate { get; set; }
         public int ProjectCount { get; set; }
         public decimal AverageProjectValue { get; set; }
         public decimal CurrentScore { get; set; }
